@@ -1,6 +1,3 @@
-from __future__ import print_function
-from __future__ import unicode_literals
-
 import sys
 import requests
 import json
@@ -18,7 +15,7 @@ app.config.from_object(Config)
 
 def flatten_dict(d):
     def items():
-        for key, value in d.items():
+        for key, value in list(d.items()):
             if isinstance(value, dict):
                for subkey, subvalue in flatten_dict(value).items():
                     yield subkey, subvalue
@@ -63,7 +60,7 @@ def create_alert():
                 pass
 
         message_flattened=flatten_dict(message)
-        for key in message_flattened.keys():
+        for key in list(message_flattened.keys()):
             if key != "message" and key != "source":
                 description=description+"\n**"+key+":** "+json.dumps(message_flattened[key], ensure_ascii=False, encoding="utf8")+"\n"
 
