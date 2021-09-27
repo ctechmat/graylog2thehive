@@ -23,5 +23,5 @@ systemctl start graylog2thehive
 ```
 
 * Runs at https://0.0.0.0:5000, accepts POST requests
-  * Point your Graylog `Legacy Alarm Callback` to `https://[YOURSERVER].com:5000/create_alert`
-  * Point your Graylog `HTTP Notification` to `https://[YOURSERVER].com:5000/create_alert_http`
+  * Point your Graylog `Legacy Alarm Callback` to `https://[YOURGRAYLOGSERVER].com:5000/create_alert`
+  * Point your Graylog `HTTP Notification` to `https://[YOURGRAYLOGSERVER].com:5000/create_alert_http`
