@@ -7,7 +7,7 @@ Type=idle
 Environment="HIVE_SECRET_KEY="
 
 WorkingDirectory=/opt/graylog2thehive
-ExecStart=/usr/bin/python app.py runserver
+ExecStart=/usr/bin/python3 app.py runserver
 
 # Connects standard output to /dev/null
 StandardOutput=journal
