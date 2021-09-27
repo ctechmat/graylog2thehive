@@ -1,3 +1,5 @@
+Clone of https://github.com/ReconInfoSec/graylog2thehive but compatible with python3.
+
 # graylog2thehive
 
 Create alerts in [The Hive](https://github.com/TheHive-Project/TheHive) from your [Graylog](https://github.com/Graylog2/graylog2-server/) alerts, to be turned into Hive cases.
@@ -5,7 +7,7 @@ Create alerts in [The Hive](https://github.com/TheHive-Project/TheHive) from you
 Simple Python flask app that runs as a web server, and accepts POST requests from your Graylog notifications.
 
 ```
-git clone https://github.com/ReconInfoSec/graylog2thehive.git /opt/graylog2thehive
+git clone https://github.com/ctechmat/graylog2thehive.git /opt/graylog2thehive
 ```
 
 Get up and running:
