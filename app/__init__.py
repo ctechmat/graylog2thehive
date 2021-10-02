@@ -62,7 +62,7 @@ def create_alert():
         message_flattened=flatten_dict(message)
         for key in list(message_flattened.keys()):
             if key != "message" and key != "source":
-                description=description+"\n**"+key+":** "+json.dumps(message_flattened[key], ensure_ascii=False, encoding="utf8")+"\n"
+                description=description+"\n**"+key+":** "+json.dumps(message_flattened[key], ensure_ascii=False)+"\n"
 
             # Use any IPs, hashes, URLs, filenames, etc here in place of src_ip and dst_ip to include them as artifacts/observables in your alert
             if key == "src_ip" or key == "dst_ip":
@@ -135,7 +135,7 @@ def create_alert_http():
         message_flattened=flatten_dict(message)
         for key in message_flattened.keys():
             if key != "message" and key != "source":
-                description=description+"\n**"+key+":** "+json.dumps(message_flattened[key], ensure_ascii=False, encoding="utf8")+"\n"
+                description=description+"\n**"+key+":** "+json.dumps(message_flattened[key], ensure_ascii=False)+"\n"
 
             # Use any IPs, hashes, URLs, filenames, etc here in place of src_ip and dst_ip to include them as artifacts/observables in your alert
             if key == "src_ip" or key == "dst_ip":
