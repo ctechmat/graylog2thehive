@@ -18,7 +18,7 @@ Get up and running:
 * **Optional**: `app/__init__.py`, configure any other IP, hash, URL, or filename fields in place of src_ip and dst_ip to include them as artifacts/observables in your alert
 
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 cp init.d/graylog2thehive.service /etc/systemd/system/graylog2thehive.service
 systemctl enable graylog2thehive
 systemctl start graylog2thehive
