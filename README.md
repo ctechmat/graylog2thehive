@@ -19,7 +19,6 @@ Get up and running:
 
 ```
 pip3 install -r requirements.txt
-cp init.d/graylog2thehive.service /etc/systemd/system/graylog2thehive.service
 systemctl enable graylog2thehive
 systemctl start graylog2thehive
 ```
